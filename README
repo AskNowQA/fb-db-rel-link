@@ -3,6 +3,23 @@ INSTRUCTIONS
 
 The objective of this project is to try to bring relationships among entities in dbpedia to the same level as freebase.
 
+output/exactsameasresults.tgz contains 610 triples and corresponding relations. The tuples are of the following nature:
+
+dbpedia:subject--->dbpedia:predicate--->dbpedia:object
+    |                                        |
+    |                                        |
+  sameAs                                  sameAs
+    |                                        |
+    |                                        |
+freebase:subject--->freebase:predicate-->freebase:object 
+
+output/potential_db_relations.tgz has 574931 "potentially" new dbpedia triples which were discovered by mining freebase for sameAs linked entities and relationships between them. These are relationships that exist on dbpedia for a subject-object pair, but no relationship exists at all for the same pair on dbpedia.
+
+
+TODO
+----
+
+From the potential list of similar/same relationships between dbpedia and freebase we need to find degree of similarity between relationships. Some may be exactly similar in semantics and other may be super/sub-set in nature.
 
 
 By,
