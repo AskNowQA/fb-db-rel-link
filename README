@@ -13,7 +13,7 @@ dbpedia:subject--->dbpedia:predicate--->dbpedia:object
     |                                        |
 freebase:subject--->freebase:predicate-->freebase:object 
 
-output/potential_db_relations.tgz has 574931 "potentially" new dbpedia triples which were discovered by mining freebase for sameAs linked entities and relationships between them. These are relationships that exist on dbpedia for a subject-object pair, but no relationship exists at all for the same pair on dbpedia.
+output/potential_db_relations.tgz has 574931 "potentially" new dbpedia triples which were discovered by mining freebase for sameAs linked entities and relationships between them. These are relationships that exist on freebase for a subject-object pair, but no relationship exists at all for the same pair on dbpedia.
 
 
 TODO
